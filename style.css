@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px;
+}
+
+.main-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/laptop.jpg) no-repeat center;
+    background-size: cover;
+    float: right;
+    transition: width .5s;
+}
+
+header div.center-text {
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header div.center-text h1 {
+    font-size: 300%;
+    margin-bottom: 2%;
+    color: #fff;
+    transition: color .2s;
+}
+
+header div.center-text h1:hover {
+    color: #111;
+}
+
+header div.center-text p {
+    font-size: 150%;
+    color: #fff;
+    margin-bottom: 3%;
+}
+
+header div.center-text p:hover {
+    color: #111;
+}
+
+header div.center-text a {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding:  1% 2%;
+    border-radius: 20px;
+    margin-right: 1%;
+    transform: background .2s;
+}
+
+header div.center-text a:hover {
+    background: #555;
+}
+
+/* End header */
+
+div.about {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/sky.jpg) no-repeat center;
+    background-size: cover;
+    float: right;
+    transition: width .5s;
+    text-align: justify;
+    overflow: hidden;
+}
+
+div.about h2 {
+    font-size: 200%;
+    color: #fff;
+    margin: 5% 0 0 5%;
+    text-align: center;
+}
+
+div.about-desc {
+    color: #fff;
+    margin: 1% 0 0 5%;
+    width: 90%;
+}
+
+div.about-desc p span {
+    color: orange;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+div.box {
+    float: left;
+    padding: 5% 10%;
+    width: 100px;
+}
+
+div.skill-desc, div.fav-desc {
+    color: orange;
+    margin: 1% 0 0 35px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+    header div.center-text p {
+        font-size: 80%;
+        color: #fff;
+        margin-bottom: 3%;
+    }
+    
+    div.box h2 {
+        float: left;
+        padding: 5% 10%;
+        font-size: 150%;
+    }
+}
+
+/* End section */
+
+footer {
+    padding: 1% 0;
+    margin-top: 10px;
+    width: 100%;
+    background: url(img/laptop.jpg);
+}
+footer p {
+    text-align: center;
+    margin: auto;
+    color: #111;
+    font-size: 100%;
+}
+/* End footer */
